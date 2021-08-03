@@ -1,0 +1,10 @@
+<div class="todo-wrapper">
+  <h3>parent component</h3>
+  <div class="todo-adder" >
+    <app-add-todo (afterToAdded)="onToAdded($event)"></app-add-todo>
+  </div >
+  <div class="todo-list" > <app-todo-list [list]="todoList"></app-todo-list></div>
+  </div>
+
+
+

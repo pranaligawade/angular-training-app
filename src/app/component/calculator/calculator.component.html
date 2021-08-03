@@ -1,0 +1,24 @@
+
+<body>
+  <h1>
+    {{title}}
+  </h1>
+
+<div class="input">
+  <input type="number" name="num1" [(ngModel)]="divNum">&nbsp;<br><br>
+  <input type="number" name="num2" [(ngModel)]="num"> &nbsp;
+
+</div><br><br>
+<div class="wrapper">
+  <button (click)="add()">+</button>&nbsp;
+  <button (click)="sub()" >-</button>&nbsp;
+  <button (click)="mul()" >*</button>&nbsp;
+  <button (click)="div()">/</button>&nbsp;
+  <button (click)="squar()">^</button>
+
+</div><br><br>
+<h2>result:
+  {{numb}}
+
+</h2>
+</body>

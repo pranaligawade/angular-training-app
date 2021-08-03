@@ -1,0 +1,46 @@
+<h1>User-Details Works!</h1>
+<div class="userwr">
+  <h3>User Add Here:</h3>
+<div class="form-wrapper">
+
+  <div style="margin-left: 10px;">
+   name: <input type="text" [(ngModel)]="name">
+  </div><br>
+<div style="margin-left: 10px;">
+ age: <input type="text" [(ngModel)]="age">
+
+</div><br>&nbsp;
+<div>gender:
+  <select name="" id="">
+    <option value="female">female</option>
+    <option value="male">male</option>
+  </select>
+</div><br>
+<div>address:
+  <textarea name="" id="" cols="30" rows="10"[(ngModel)]="address"></textarea>
+
+</div><br>
+<div style="margin-left: 10px;">  <button (click)="addUserToList()">add user</button></div>  <br>
+
+  <div style="margin-left: 10px;">  <button (click)="reset()">reset user</button>
+
+</div><br></div>
+<h3>
+  User-list is here:
+</h3>
+<div class="wrapper">
+<div class="user-detail-wrapper" *ngFor="let user of UserDetails">
+<div class="user-detail">name: {{user.name}}
+</div>
+<div class="user-detail" [ngClass] = " user.gender == 'female' ? 'female':'male'"> gender:  {{user.gender}}
+
+</div>
+<div class="user-detail" *ngIf="user.age<23">age:{{user.age}}
+
+</div>
+<div class="user-detail">address: {{user.address}}
+</div>
+</div>
+
+</div>
+</div>

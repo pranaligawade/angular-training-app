@@ -1,0 +1,15 @@
+.wrapper{
+ display:flex;
+  flex-direction: row;
+justify-content: space-around;
+cursor: pointer;
+
+}
+body{
+  background-color:silver;
+  padding: 60px;
+  margin: 90px;
+  border:10px solid gray;
+  text-align: center;
+  /* margin: 20px 500px 20px 500px; */
+}

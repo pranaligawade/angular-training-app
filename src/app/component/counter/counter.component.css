@@ -1,0 +1,14 @@
+h1{
+  text-align: center;
+}
+.wrapper{
+  padding: 30px;
+  margin: 40px;
+  background-color: yellow;
+  border: 10px solid greenyellow;
+  text-align: center;
+}
+button{
+  margin: 20px;
+  cursor: pointer;
+}
