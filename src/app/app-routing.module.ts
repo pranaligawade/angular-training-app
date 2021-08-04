@@ -15,7 +15,6 @@ import { ChildComponent } from './component/child/child.component';
 import { DbatuComponent } from './component/dbatu/dbatu.component';
 import { DbatuAboutComponent } from './component/dbatu-about/dbatu-about.component';
 import { DbatuContactComponent } from './component/dbatu-contact/dbatu-contact.component';
-
 const routes: Routes = [
  {
     path: '',

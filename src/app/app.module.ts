@@ -10,7 +10,7 @@ import {CounterComponent } from './component/counter/counter.component';
 import {CalculatorComponent } from './component/calculator/calculator.component';
 import { AddTodoComponent } from './component/todo/add-todo/add-todo.component';
 import { TodoListComponent } from './component/todo/todo-list/todo-list.component';
-import { FormsModule, NgModel } from '@angular/forms';
+import { FormsModule, NgModel, ReactiveFormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
 import { HomeComponent } from './component/home/home.component';
 import { ParentComponent } from './component/parent/parent.component';
@@ -18,7 +18,11 @@ import { ChildComponent } from './component/child/child.component';
 import { DbatuComponent } from './component/dbatu/dbatu.component';
 import { DbatuAboutComponent } from './component/dbatu-about/dbatu-about.component';
 import { DbatuContactComponent } from './component/dbatu-contact/dbatu-contact.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialDemoComponent } from './component/angular-material-demo/angular-material-demo.component';
+import {MatCardModule} from '@angular/material/card';
+import { FormExampleComponent } from './component/form-example/form-example.component';
+// import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +40,9 @@ import { DbatuContactComponent } from './component/dbatu-contact/dbatu-contact.c
     DbatuComponent,
     DbatuAboutComponent,
     DbatuContactComponent,
+    AngularMaterialDemoComponent,
+    FormExampleComponent,
+    // MatCardModule
 
 
 
@@ -43,8 +50,10 @@ import { DbatuContactComponent } from './component/dbatu-contact/dbatu-contact.c
   imports: [
     BrowserModule,
     AppRoutingModule,
-   FormsModule
-
+   FormsModule,
+   BrowserAnimationsModule,
+   MatCardModule,
+   ReactiveFormsModule
   ],
 
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
