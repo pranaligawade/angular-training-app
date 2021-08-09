@@ -30,6 +30,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
 import { FormTableComponent } from './form-table/form-table.component';
+import { ServiceExampleComponent } from './component/service-example/service-example.component';
+import { LifeCycleComponent } from './component/life-cycle/life-cycle.component';
 // import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
@@ -53,6 +55,8 @@ import { FormTableComponent } from './form-table/form-table.component';
     FormExampleComponent,
       AngularMaterialDemoComponent,
       FormTableComponent,
+      ServiceExampleComponent,
+      LifeCycleComponent,
 
     // MatCardModule
 
