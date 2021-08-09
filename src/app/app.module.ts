@@ -19,10 +19,19 @@ import { DbatuComponent } from './component/dbatu/dbatu.component';
 import { DbatuAboutComponent } from './component/dbatu-about/dbatu-about.component';
 import { DbatuContactComponent } from './component/dbatu-contact/dbatu-contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularMaterialDemoComponent } from './component/angular-material-demo/angular-material-demo.component';
+
 import {MatCardModule} from '@angular/material/card';
 import { FormExampleComponent } from './component/form-example/form-example.component';
+import { AngularMaterialDemoComponent } from './angular-material-demo/angular-material-demo.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
+import { FormTableComponent } from './form-table/form-table.component';
 // import {MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,8 +49,11 @@ import { FormExampleComponent } from './component/form-example/form-example.comp
     DbatuComponent,
     DbatuAboutComponent,
     DbatuContactComponent,
-    AngularMaterialDemoComponent,
+
     FormExampleComponent,
+      AngularMaterialDemoComponent,
+      FormTableComponent,
+
     // MatCardModule
 
 
@@ -53,7 +65,16 @@ import { FormExampleComponent } from './component/form-example/form-example.comp
    FormsModule,
    BrowserAnimationsModule,
    MatCardModule,
-   ReactiveFormsModule
+   MatExpansionModule,
+   ReactiveFormsModule,
+   MatButtonModule,
+   MatInputModule, // input fields
+   MatSelectModule, //select box
+   MatCardModule,
+   MatIconModule,
+   MatExpansionModule,
+   MatTableModule,
+   BrowserAnimationsModule
   ],
 
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
