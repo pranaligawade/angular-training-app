@@ -36,7 +36,9 @@ import { DialogExampleComponent } from './component/dialog-example/dialog-exampl
 // import {MatCardModule} from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogContentComponent } from './component/dialog-content/dialog-content.component';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,8 +56,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     DbatuComponent,
     DbatuAboutComponent,
     DbatuContactComponent,
-
-    FormExampleComponent,
+      FormExampleComponent,
       AngularMaterialDemoComponent,
       FormTableComponent,
       ServiceExampleComponent,
@@ -85,11 +86,14 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
    MatTableModule,
    BrowserAnimationsModule,
    MatDialogModule,
-   MatDatepickerModule
+   MatDatepickerModule,
+   MatNativeDateModule
   ],
-
+  exports: [  MatNativeDateModule],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

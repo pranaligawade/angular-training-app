@@ -16,18 +16,27 @@ export class DialogExampleComponent implements OnInit {
   openDialog(): void {
     let openDialogRef = this.dialog.open(DialogContentComponent , {
 
-      height: '400px',
+      height: '500px',
       width: '600px',
      data:{
  name:'pranali gawade'
      },
-     position:{
-         bottom:'0',
-        // left:'0'
-       }
+    //  position:{
+    //      bottom:'0',
+    //     // left:'0'
+    //    }
   });
 
   openDialogRef.afterClosed().subscribe(data=>{
+    console.log(data);
+    console.log(data.title);
+    console.log(data.name);
+    console.log(data.lastname);
+    console.log(data.email);
+    console.log(data.phone);
+    console.log(data.picker);
+    console.log(data.gender);
+
     console.log(data);
   })
 }

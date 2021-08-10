@@ -1,5 +1,5 @@
 import { Component, OnInit,Inject} from '@angular/core';
-//import {MatDatepickerModule} from '@angular/material/datepicker';
+//import {MatDatepicker, MatDatepickerModule} from '@angular/material/datepicker';
 import { FormControl, Validators } from '@angular/forms';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 @Component({
@@ -32,17 +32,22 @@ Validators.required,
     this.ref.close();
    }
 onsave(){
-  this.ref.close({
+this.ref.close({
+      title:this.title.value,
+      name:this.name.value,
+      lastname: this.lastname.value,
+      email:this.email.value,
+      gender: this.gender.value,
+      phone: this.phone.value,
 
-title:this.title.value,
-  name:this.name.value,
-  lastname: this.lastname.value,
-  email:this.email.value,
-  gender: this.gender.value,
-  phone: this.phone.value,
+    } )
+    this.name.markAsTouched();
+    this.email.markAsTouched();
+    this.phone.markAsTouched();
+  }
+
+
 }
 
 
-)}
 
-}
