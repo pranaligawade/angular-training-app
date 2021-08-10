@@ -32,8 +32,11 @@ import {MatTableModule} from '@angular/material/table';
 import { FormTableComponent } from './form-table/form-table.component';
 import { ServiceExampleComponent } from './component/service-example/service-example.component';
 import { LifeCycleComponent } from './component/life-cycle/life-cycle.component';
+import { DialogExampleComponent } from './component/dialog-example/dialog-example.component';
 // import {MatCardModule} from '@angular/material/card';
-
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogContentComponent } from './component/dialog-content/dialog-content.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,6 +60,8 @@ import { LifeCycleComponent } from './component/life-cycle/life-cycle.component'
       FormTableComponent,
       ServiceExampleComponent,
       LifeCycleComponent,
+      DialogExampleComponent,
+      DialogContentComponent,
 
     // MatCardModule
 
@@ -78,7 +83,9 @@ import { LifeCycleComponent } from './component/life-cycle/life-cycle.component'
    MatIconModule,
    MatExpansionModule,
    MatTableModule,
-   BrowserAnimationsModule
+   BrowserAnimationsModule,
+   MatDialogModule,
+   MatDatepickerModule
   ],
 
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
