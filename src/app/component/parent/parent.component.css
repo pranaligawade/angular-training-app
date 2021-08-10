@@ -1,0 +1,9 @@
+h1{
+  background-color: blanchedalmond;
+  color: brown;
+}
+div{
+  background-color: aquamarine;
+  background-origin: padding-box;
+  border: 3px solid ;
+}

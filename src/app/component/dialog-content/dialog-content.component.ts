@@ -8,7 +8,7 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog
   styleUrls: ['./dialog-content.component.css']
 })
 export class DialogContentComponent implements OnInit {
- gender= new FormControl('', []);
+ gender= new FormControl('', [Validators.required]);
  title= new FormControl('', [Validators.required ]);
  name= new FormControl('', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]);
  lastname= new FormControl('', [ Validators.minLength(2), Validators.maxLength(50),Validators.required]);
@@ -17,8 +17,7 @@ Validators.required,
   Validators.email, //abc@domai.com
 ]);
  phone= new FormControl('', [Validators.pattern(/^(\+\d{1,3}[- ]?)?\d{10}$/)]);
-
-
+ Date=new FormControl(new Date(),[]);
   constructor(
     public ref :MatDialogRef<DialogContentComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) {
@@ -39,7 +38,7 @@ this.ref.close({
       email:this.email.value,
       gender: this.gender.value,
       phone: this.phone.value,
-
+     Date:this.Date.value,
     } )
     this.name.markAsTouched();
     this.email.markAsTouched();

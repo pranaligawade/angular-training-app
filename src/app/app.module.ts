@@ -19,26 +19,26 @@ import { DbatuComponent } from './component/dbatu/dbatu.component';
 import { DbatuAboutComponent } from './component/dbatu-about/dbatu-about.component';
 import { DbatuContactComponent } from './component/dbatu-contact/dbatu-contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import {MatCardModule} from '@angular/material/card';
 import { FormExampleComponent } from './component/form-example/form-example.component';
-import { AngularMaterialDemoComponent } from './angular-material-demo/angular-material-demo.component';
+import { AngularMaterialDemoComponent } from './component/angular-material-demo/angular-material-demo.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
-import { FormTableComponent } from './form-table/form-table.component';
+import { FormTableComponent } from './component/form-table/form-table.component';
 import { ServiceExampleComponent } from './component/service-example/service-example.component';
 import { LifeCycleComponent } from './component/life-cycle/life-cycle.component';
 import { DialogExampleComponent } from './component/dialog-example/dialog-example.component';
-// import {MatCardModule} from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogContentComponent } from './component/dialog-content/dialog-content.component';
-
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { SideBarComponent } from './component/side-bar/side-bar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,6 +63,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
       LifeCycleComponent,
       DialogExampleComponent,
       DialogContentComponent,
+      SideBarComponent,
 
     // MatCardModule
 
@@ -70,8 +71,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+   BrowserModule,
+   AppRoutingModule,
    FormsModule,
    BrowserAnimationsModule,
    MatCardModule,
@@ -87,7 +88,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
    BrowserAnimationsModule,
    MatDialogModule,
    MatDatepickerModule,
-   MatNativeDateModule
+   MatNativeDateModule,
+   MatSidenavModule,
+   MatToolbarModule
   ],
   exports: [  MatNativeDateModule],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],

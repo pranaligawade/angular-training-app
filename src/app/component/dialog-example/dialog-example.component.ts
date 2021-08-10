@@ -29,15 +29,15 @@ export class DialogExampleComponent implements OnInit {
 
   openDialogRef.afterClosed().subscribe(data=>{
     console.log(data);
-    console.log(data.title);
-    console.log(data.name);
-    console.log(data.lastname);
-    console.log(data.email);
-    console.log(data.phone);
-    console.log(data.picker);
-    console.log(data.gender);
+    // console.log(data.title);
+    // console.log(data.name);
+    // console.log(data.lastname);
+    // console.log(data.email);
+    // console.log(data.phone);
+    // console.log(data.picker);
+    // console.log(data.gender);
 
-    console.log(data);
+    // console.log(data.Date);
   })
 }
 }
