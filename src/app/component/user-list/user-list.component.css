@@ -1,0 +1,10 @@
+.prodile-img{
+  width: 50px;
+  border-radius: 50%;
+}
+.loaderwrapper{
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}

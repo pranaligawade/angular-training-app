@@ -39,6 +39,11 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { SideBarComponent } from './component/side-bar/side-bar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { FormGroupComponent } from './component/form-group/form-group.component';
+import { UserListComponent } from './component/user-list/user-list.component';
+import { RestDemoComponent } from './component/rest-demo/rest-demo.component';
+
+import { RxjsDemoComponent } from './component/rxjs-demo/rxjs-demo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,6 +69,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
       DialogExampleComponent,
       DialogContentComponent,
       SideBarComponent,
+      FormGroupComponent,
+      UserListComponent,
+      RestDemoComponent,
+      RxjsDemoComponent,
 
     // MatCardModule
 
