@@ -1,0 +1,17 @@
+h1{
+  color: brown;
+   text-align:  center;
+   padding:  15px;
+}
+div{
+   text-align: center;
+
+}
+
+mat-card{
+  background-color:yellow;
+  max-width: 75%;
+  margin: 70px ;
+  border: 1px solid yellowgreen;
+text-size-adjust: 55px;
+}

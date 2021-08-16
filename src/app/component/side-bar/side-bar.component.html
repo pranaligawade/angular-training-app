@@ -4,7 +4,7 @@
     <button mat-icon-button (click)= "isExpanded = !isExpanded">
       <mat-icon>menu</mat-icon>
     </button>
-    <h1 class="example-app-name">Angular- training-App</h1>
+    <h1 class="example-app-name">Angular-Training-App</h1>
   </mat-toolbar>
 
   <mat-sidenav-container  class="example-container" autosize>
@@ -15,8 +15,20 @@
         <div routerLink="/">
           <mat-icon>home</mat-icon>
           <span *ngIf="isExpanded">Dashboard</span>
-      </div>
+      </div><hr>
     </mat-list-item>
+    <mat-list-item>
+      <div routerLink="/form-group">
+        <mat-icon>person</mat-icon>
+        <span *ngIf="isExpanded">USER-FORM</span>
+    </div>
+  </mat-list-item>
+  <mat-list-item>
+    <div routerLink="/user-list">
+      <mat-icon>list</mat-icon>
+      <span *ngIf="isExpanded">USER-LIST</span>
+  </div>
+</mat-list-item>
       </mat-nav-list>
 
     </mat-sidenav>

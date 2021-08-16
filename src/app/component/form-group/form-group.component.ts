@@ -33,6 +33,7 @@ export class FormGroupComponent implements OnInit {
   save() {
 
  console.log(this.userForm.value);
+ this.reset();
     }
 
   reset() {

@@ -1,0 +1,24 @@
+
+mat-form-field{
+  width: 100%;
+}
+mat-card{
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+}
+.button-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.button-wrapper > button{
+  margin-left: 10px;
+}
+
+.userfrom{
+ background-color: #424242;
+  padding: 20px;
+ width:50%;
+ margin: auto;
+}

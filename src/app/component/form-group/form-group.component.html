@@ -1,6 +1,6 @@
 <p>form-group works!</p>
 <div class="wrapper">
-
+  <mat-card>
   <form  [formGroup] ="userForm"class="userForm">
     <div class="row h3 p-2 pl-3 text-white">Add User</div>
     <div class="row">
@@ -26,7 +26,7 @@
     <div class="col">
       <mat-form-field class="example-full-width" appearance="outline">
         <mat-label>LastName  *</mat-label>
-        <input type="text" matInput formControlName="  lastname" placeholder="Ex. john doe"
+        <input type="text" matInput formControlName="lastname" placeholder="Ex. john doe"
             autocomplete="false">
 
     </mat-form-field>
@@ -40,8 +40,8 @@
               autocomplete="false">
           <!-- <mat-error *ngIf="email.hasError('email')">
               Please enter a valid email address
-          </mat-error> -->
-          <!-- <mat-error *ngIf="email.hasError('required')">
+          </mat-error>
+          <mat-error *ngIf="email.hasError('required')">
               Email is <strong>required</strong>
           </mat-error> -->
       </mat-form-field>
@@ -74,10 +74,10 @@
       </mat-form-field>
     </div>
       <div class="button-wrapper">
-          <button type="button" mat-stroked-button color="primary" (click)="reset()">Reset</button>
-          <button type="submit" mat-raised-button color="primary" (click)="save()">Save</button>
+          <button type="button" mat-stroked-button color="primary" class="m-2" (click)="reset()">Reset</button>
+          <button type="submit" mat-raised-button color="primary" class="m-2" (click)="save()">Save</button>
       </div>
 
 </form>
-
+</mat-card>
 </div>

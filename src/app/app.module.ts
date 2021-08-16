@@ -42,7 +42,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FormGroupComponent } from './component/form-group/form-group.component';
 import { UserListComponent } from './component/user-list/user-list.component';
 import { RestDemoComponent } from './component/rest-demo/rest-demo.component';
-
+import { HttpClientModule } from '@angular/common/http';
 import { RxjsDemoComponent } from './component/rxjs-demo/rxjs-demo.component';
 @NgModule({
   declarations: [
@@ -85,6 +85,7 @@ import { RxjsDemoComponent } from './component/rxjs-demo/rxjs-demo.component';
    FormsModule,
    BrowserAnimationsModule,
    MatCardModule,
+   HttpClientModule,
    MatExpansionModule,
    ReactiveFormsModule,
    MatButtonModule,

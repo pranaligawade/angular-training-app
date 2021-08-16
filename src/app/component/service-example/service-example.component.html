@@ -1,1 +1,14 @@
-<p>service-example works!</p>
+<h1>service-example works!</h1>
+
+<mat-spinner *ngIf="showLoading"></mat-spinner>
+
+<div *ngIf="!showLoading"><h1>Data Received</h1></div>
+
+<mat-card>
+<div *ngFor="let user of userData">
+  <div><strong>id</strong> : {{user.id}} </div>
+    <div><strong>Name</strong> : {{user.first_name}} {{user.last_name}}</div>
+    <div><strong>Email</strong> : {{user.email}}</div>
+</div>
+
+</mat-card>

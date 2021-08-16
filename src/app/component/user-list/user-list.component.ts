@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-user-list',
@@ -6,12 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
-  displayedColumns: string[]=['picture','id','title','name','email'];
+  displayedColumns=['picture','title','name','email','id',];
 data:any[]=[];
 showloader:boolean=true;
-  constructor() { }
+obsObject=new Observable();
+
+  constructor(private _userUser:UserService) { }
 
   ngOnInit(): void {
+    // this._userUser.getUser().subscribe((res:any)=>{
+    //   this.showloader=false;
+    //   this.data=res.data;
+    // },err=>{});
   }
 
 }

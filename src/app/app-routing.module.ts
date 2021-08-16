@@ -20,12 +20,44 @@ import { AngularMaterialDemoComponent } from './component/angular-material-demo/
 import { DialogExampleComponent } from './component/dialog-example/dialog-example.component';
 import { LifeCycleComponent } from './component/life-cycle/life-cycle.component';
 import { FormExampleComponent } from './component/form-example/form-example.component';
+
+
+import { FormGroupComponent } from './component/form-group/form-group.component';
+import { UserListComponent } from './component/user-list/user-list.component';
+import { RestDemoComponent } from './component/rest-demo/rest-demo.component';
+import { ServiceExampleComponent } from './component/service-example/service-example.component';
+import { RxjsDemoComponent } from './component/rxjs-demo/rxjs-demo.component';
 const routes: Routes = [
  {
     path: '',
     component: HomeComponent,
     pathMatch:'full'
   },
+  {
+    path:'user-list',
+    component: UserListComponent
+
+      },
+  {
+    path:'form-group',
+    component:  FormGroupComponent
+
+      },
+  {
+    path:'service-example',
+    component: ServiceExampleComponent
+
+      },
+      {
+        path:'rxjs-demo',
+        component:RxjsDemoComponent
+
+          },
+  {
+    path:'rest-demo',
+    component:RestDemoComponent
+
+      },
   {
     path:'form-example',
     component: FormExampleComponent
